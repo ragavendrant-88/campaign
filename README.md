@@ -4,7 +4,7 @@ Steps to run this application:
 
 1. To Build Image `docker-compose build`
 
-2. To Install essential packages `docker-compose run yarn install`
+2. To Install essential packages `docker-compose run app yarn install`
 
 3. To Create Database `docker-compose run app rails db:create`
 
