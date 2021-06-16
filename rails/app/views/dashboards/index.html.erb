@@ -1,0 +1,25 @@
+<table class="table">
+  <thead class="table-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Impression</th>
+      <th scope="col">Click</th>
+      <th scope="col">CV</th>
+      <th scope="col">Cost</th>
+
+    </tr>
+  </thead>
+  <tbody>
+		<% @campaigns.each do |campaign| %>
+    <tr>
+      <th scope="row"><%= campaign.id %></th>
+      <td><%= campaign.name %></td>
+      <td><%= campaign.impressions %></td>
+      <td><%= campaign.clicks %></td>
+      <td><%= campaign.link_clicks %></td>
+      <td><%= campaign.spends %></td>
+    </tr>
+		<% end %>
+  </tbody>
+</table>
